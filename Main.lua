@@ -1,4 +1,4 @@
--- Originally by Babyhamsta, this is just a fork/reupload.
+-- Originally by Babyhamsta, this is just a fork/reupload since the original repo was deleted.
 -- Pretty much just a bunch of know detection bypasses
 
 task.spawn(function()
