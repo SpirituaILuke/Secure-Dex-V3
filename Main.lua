@@ -1,7 +1,8 @@
 local a=Instance.new("Part")for b,c in pairs(getreg())do if type(c)=="table"and#c then if rawget(c,"__mode")=="kvs"then for d,e in pairs(c)do if e==a then getgenv().InstanceList=c;break end end end end end;local f={}function f.invalidate(g)if not InstanceList then return end;for b,c in pairs(InstanceList)do if c==g then InstanceList[b]=nil;return g end end end;if not cloneref then getgenv().cloneref=f.invalidate end
-getgenv().saveinstance = nil -- band aid fix, It's gonna error if you remove this '3537: attempt to call missing method 'GetChildren' of string'
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/SpirituaILuke/Secure-Dex-V3/main/Bypasses.lua", true))()
+
+getgenv().saveinstance = nil -- band aid fix, It's gonna error if you remove this '3537: attempt to call missing method 'GetChildren' of string'
 getgenv().Bypassed_Dex = game:GetObjects("rbxassetid://9352453730")[1]
 
 local charset = {}
